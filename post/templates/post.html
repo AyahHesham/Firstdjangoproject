@@ -1,0 +1,4 @@
+<h1>BLOG</h1>
+{% for post in aya %} 
+    <h3><a href="{% url 'single' post.id%}">{{post}}-{{post.continant}}</a></h3>
+{% endfor %}

@@ -1,0 +1,7 @@
+<h3>{{single_post}}</h3>
+<p>{{single_post.continant}}</p>
+
+<img src="{{single_post.image.url}}">
+<hr>
+<a href="{% url 'editpost' single_post.id %}">edit</a>
+<a href="{% url 'deletepost' single_post.id %}">delete</a>
